@@ -1,0 +1,9 @@
+<% @movies.each do |movie| %>
+  
+  <h2><a href="/client/movies/<%= movie['id'] %>"><%= movie["title"] %></a></h2>
+  <h3>Genre: <%= movie["genre"] %></h3>
+  <p>Year: <%= movie["year"] %><br>
+  <img src="<%=movie["art_url"] %>" style="width:150px;height:225px;">
+<% end %>
+<br><br>
+<a href="/client/movies/new">Add Movie</a>

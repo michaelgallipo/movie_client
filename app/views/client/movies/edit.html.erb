@@ -1,0 +1,18 @@
+<h2> Edit Movie Information </h2>
+
+<%= form_tag "/client/movies/#{@movie['id']}", method: :patch do %>
+  <div>
+    Title: <input type="text" name="title" value="<%= @movie['title'] %>" />
+  </div> 
+  <div>
+    Genre <input type="text" name="genre" value="<%= @movie['genre'] %>" />
+  </div>
+   <div>
+    Year: <input type="text" name="year" value="<%= @movie['year'] %>" />
+  </div>
+ <div>
+    Url: <input type="text" name="art_url" value="<%= @movie['art_url'] %>" />
+  </div>
+  <br>
+  <input type="submit" name="" value="Edit Movie" />
+  <% end %>

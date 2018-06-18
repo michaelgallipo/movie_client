@@ -1,0 +1,18 @@
+<h2> Add Movie to Collection </h2>
+
+<%= form_tag "/client/movies", method: :post do %>
+  <div>
+    Title: <input type="text" name="title" />
+  </div> 
+  <div>
+    Genre <input type="text" name="genre" />
+  </div>
+   <div>
+    Year: <input type="text" name="year" />
+  </div>
+ <div>
+    Url: <input type="text" name="art_url" />
+  </div>
+  <br>
+  <input type="submit" name="" value="Create Movie" />
+  <% end %>
